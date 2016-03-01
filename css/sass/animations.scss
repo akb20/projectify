@@ -1,0 +1,5 @@
+@keyframes colorify {
+	0% { -webkit-filter: grayscale(1); }
+	50% { -webkit-filter: grayscale(0); }
+	100% { -webkit-filter: grayscale(1); }
+}

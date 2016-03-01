@@ -1,0 +1,135 @@
+// Load fonts
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,600);
+// Load partials
+@import 'sass/header';
+@import 'sass/sidebar';
+@import 'sass/cards';
+@import 'sass/contact';
+@import 'sass/animations';
+
+
+
+// - - - - - - Basic styles - - - - - - //
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  background-color: #F5F5F5;
+  color: black;
+}
+
+.links {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 20px;
+  transition: all .1s ease-in-out;
+  &:hover {
+    color: #58C775;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// - - - - - - Wrapper - - - - - - //
+
+.wrapper {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+// - - - - - - Media queries - - - - - - //
+
+@media(max-width: 1024px) {
+  .wrapper {
+    display: block;
+    width: 500px;
+  }
+  .header .nav-wrapper {
+    width: 500px;
+  }
+  .card {
+    width: 500px;
+  }
+  .sidebar {
+    width: 500px;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 550px) {
+  .wrapper {
+    display: block;
+    width: 400px;
+  }
+  .header {
+    margin-bottom: 40px;
+  }
+  .header .nav-wrapper {
+    width: 400px;
+  }
+  .sidebar {
+    width: 400px;
+  }
+  .card {
+    width: 400px;
+    margin-bottom: 40px;
+  }
+  .card .fanbase-img {
+    height: 250px;
+  }
+  .card .desc {
+    font-size: .9em;
+    margin: 15px 0 20px 0;
+    line-height: 1.2em;
+  }
+  .card .fanbase-meta {
+    padding: 20px 50px;
+  }
+  .sidebar {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 450px) {
+  .wrapper {
+    display: block;
+    width: 340px;
+  }
+  .header .nav-wrapper {
+    width: 340px;
+  }
+  .sidebar {
+    width: 340px;
+  }
+  .card {
+    width: 340px;
+    margin-bottom: 40px;
+  }
+  .card .fanbase-img {
+    height: 220px;
+  }
+  .card .title {
+    font-size: 1.2em;
+  }
+  .card .desc {
+    //display: none;
+    font-size: .9em;
+    margin: 15px 0 20px 0;
+    line-height: 1.2em;
+  }
+  .card .meta {
+    padding: 20px 20px;
+  }
+  .links {
+    font-size: 1em;
+  }
+}
