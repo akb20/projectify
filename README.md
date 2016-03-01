@@ -1,4 +1,5 @@
 # projectify
 
-![alt tag](https://raw.githubusercontent.com/akb20/projectify/screenshot.png)
+![alt tag](https://github.com/akb20/projectify/blob/master/screenshot.jpg?raw=true)
+
 
